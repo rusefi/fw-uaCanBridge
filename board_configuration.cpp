@@ -1,5 +1,7 @@
 #include "pch.h"
 #include "board_overrides.h"
+#include "hellen_meta.h"
+#include "hellen_leds_100.cpp"
 
 Gpio getCommsLedPin() {
 	return Gpio::Unassigned;
@@ -38,6 +40,16 @@ static void customBoardDefaultConfiguration() {
 
 //	engineConfiguration->clt.config.bias_resistor = 2490;
 //	engineConfiguration->iat.config.bias_resistor = 2490;
+
+
+	engineConfiguration->canTxPin = Gpio::MM100_CAN_TX;
+	engineConfiguration->canRxPin = Gpio::MM100_CAN_RX;
+
+	engineConfiguration->can2RxPin = Gpio::B12;
+	engineConfiguration->can2TxPin = Gpio::B13;
+
+	engineConfiguration->can3TxPin = Gpio::MM100_CAN3_TX;
+	engineConfiguration->can3RxPin = Gpio::MM100_CAN3_RX;
 
 
 	// Battery sense on PA0
