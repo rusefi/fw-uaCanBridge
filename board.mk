@@ -19,3 +19,10 @@ DDEFS += -DEFI_WIDEBAND_FIRMWARE_UPDATE=FALSE
 
 #see main repo for details on this any many other optional subsystems. We have too many, one has to choose what fits into his choice of stm32
 #DDEFS += -DEFI_ONBOARD_MEMS=TRUE
+
+
+# Default H743 linker script is not compatible
+DSCRIPT = $(PROJECT_DIR)/hw_layer/ports/stm32/stm32h7/STM32H723xG_ITCM64k.ld
+# Do not use HSE autodetection
+DDEFS += -DSTM32_HSECLK=20000000
+DDEFS += -DENABLE_AUTO_DETECT_HSE=FALSE
