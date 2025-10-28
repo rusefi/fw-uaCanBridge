@@ -7,11 +7,13 @@ Gpio getCommsLedPin() {
 }
 
 Gpio getRunningLedPin() {
-	return Gpio::Unassigned;
+	// Blue
+	return Gpio::C14;
 }
 
 Gpio getWarningLedPin() {
-	return Gpio::Unassigned;
+	// Red
+	return Gpio::C15;
 }
 
 // board-specific configuration setup
