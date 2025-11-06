@@ -1,5 +1,6 @@
 include $(BOARD_DIR)/firmware/firmware.mk
 
+DDEFS += -DLED_CRITICAL_ERROR_BRAIN_PIN=Gpio::C15
 
 BOARDINC += $(BOARD_DIR)/generated/controllers/generated
 

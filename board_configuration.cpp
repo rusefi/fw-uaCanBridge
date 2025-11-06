@@ -12,8 +12,7 @@ Gpio getRunningLedPin() {
 }
 
 Gpio getWarningLedPin() {
-	// Red
-	return Gpio::C15;
+	return Gpio::Unassigned;
 }
 
 // board-specific configuration setup
