@@ -1,3 +1,5 @@
+#define MAIN_HELP_URL "https://github.com/rusefi/rusefi/wiki/uaCanBridge"
+
 ! example of .ini file templating option
 #define ts_show_etb_pins false
 
