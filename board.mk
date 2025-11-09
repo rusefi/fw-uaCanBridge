@@ -1,6 +1,8 @@
 include $(BOARD_DIR)/firmware/firmware.mk
 
 DDEFS += -DLED_CRITICAL_ERROR_BRAIN_PIN=Gpio::C15
+# PC14, PC15 are used for LEDs
+DDEFS += -DSTM32_LSE_ENABLED=FALSE
 
 BOARDINC += $(BOARD_DIR)/generated/controllers/generated
 
