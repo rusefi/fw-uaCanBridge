@@ -2,10 +2,6 @@
 #include "board_overrides.h"
 #include "hellen_meta.h"
 
-#ifndef EFI_BOOTLOADER
-#include "lua_lib.h"
-#endif
-
 Gpio getCommsLedPin() {
 	return Gpio::Unassigned;
 }
@@ -58,19 +54,6 @@ static void customBoardDefaultConfiguration() {
 
 	// Battery sense on PA0
 //	engineConfiguration->vbattAdcChannel = EFI_ADC_0;
-
-#ifndef EFI_BOOTLOADER
-	strncpy(config->luaScript, GET_BIT_RANGE_LSB TWO_BYTES_LSB PRINT_ARRAY SET_TWO_BYTES_LSB R"(
-
-enableCanRxWorkaround()
-global_can_data = {}
-
-
-function onTick()
-end
-
-    )", efi::size(config->luaScript));
-#endif
 }
 
 void setup_custom_board_overrides() {
