@@ -23,6 +23,7 @@ DDEFS += -DEFI_WIDEBAND_FIRMWARE_UPDATE=FALSE
 #see main repo for details on this any many other optional subsystems. We have too many, one has to choose what fits into his choice of stm32
 #DDEFS += -DEFI_ONBOARD_MEMS=TRUE
 
+DDEFS += -DBOARD_SERIAL="\"000000000000060000000000\""
 
 # Default H743 linker script is not compatible
 LDSCRIPT = $(PROJECT_DIR)/hw_layer/ports/stm32/stm32h7/STM32H723xG_ITCM64k.ld
