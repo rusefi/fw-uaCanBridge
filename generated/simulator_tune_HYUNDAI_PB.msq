@@ -5093,7 +5093,7 @@ end</constant>
 </constant>
         <constant name="yesUnderstandLocking">"no"</constant>
     </page>
-    <versionInfo firmwareInfo="20251118" nPages="1" signature="rusEFI main.2025.11.18.canBridge.278270673" version="5.0"/>
+    <versionInfo firmwareInfo="20251118" nPages="1" signature="rusEFI main.2025.11.18.canBridge.1798558585" version="5.0"/>
     <bibliography author="rusEFI 20251118" writeDate="date"/>
     <settings/>
     <userComments/>
