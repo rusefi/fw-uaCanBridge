@@ -7,6 +7,7 @@
 
 ! everything below is only #define X false
 
+#define ts_show_can_pins false
 #define ts_show_etb_pins false
 #define ts_show_etb_bias_curve false
 #define ts_show_rotary false

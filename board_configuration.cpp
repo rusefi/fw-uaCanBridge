@@ -18,6 +18,15 @@ Gpio getWarningLedPin() {
 static void customBoardConfigOverrides() {
     engineConfiguration->enableExtendedCanBroadcast = false;
     engineConfiguration->enableVerboseCanTx = false;
+
+	engineConfiguration->canTxPin = Gpio::MM100_CAN_TX;
+	engineConfiguration->canRxPin = Gpio::MM100_CAN_RX;
+
+	engineConfiguration->can2RxPin = Gpio::B12;
+	engineConfiguration->can2TxPin = Gpio::B13;
+
+	engineConfiguration->can3TxPin = Gpio::MM100_CAN3_TX;
+	engineConfiguration->can3RxPin = Gpio::MM100_CAN3_RX;
 }
 
 // board-specific configuration setup
@@ -47,14 +56,6 @@ static void customBoardDefaultConfiguration() {
 //	engineConfiguration->iat.config.bias_resistor = 2490;
 
 
-	engineConfiguration->canTxPin = Gpio::MM100_CAN_TX;
-	engineConfiguration->canRxPin = Gpio::MM100_CAN_RX;
-
-	engineConfiguration->can2RxPin = Gpio::B12;
-	engineConfiguration->can2TxPin = Gpio::B13;
-
-	engineConfiguration->can3TxPin = Gpio::MM100_CAN3_TX;
-	engineConfiguration->can3RxPin = Gpio::MM100_CAN3_RX;
 
 
 	// Battery sense on PA0
