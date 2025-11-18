@@ -1,10 +1,72 @@
-#define MAIN_HELP_URL "https://github.com/rusefi/rusefi/wiki/uaCanBridge"
-
-! example of .ini file templating option
-#define ts_show_etb_pins false
-
-
+#define MAIN_HELP_URL "https://wiki.rusefi.com/uaCanBridge"
 
 #define LUA_SCRIPT_SIZE 48000
 #define EFI_CAN_BUS_COUNT 3
 #define EFI_CAN_CANFD TRUE
+
+
+! everything below is only #define X false
+
+#define ts_show_etb_pins false
+#define ts_show_etb_bias_curve false
+#define ts_show_rotary false
+#define ts_show_egt false
+#define ts_show_number_of_cylinders false
+#define ts_show_firing_order false
+#define ts_show_cam2 false
+#define ts_show_bank2_cam1 false
+#define ts_show_bank2_cam2 false
+#define ts_show_air_conditioning false
+#define ts_show_exhaust_vvt false
+#define ts_show_starter_disable false
+#define ts_show_start_button false
+
+#define ts_show_popular_vehicles true
+#define ts_show_reset_calibrations true
+
+#define ts_show_tps2 false
+#define ts_show_iat false
+#define ts_show_baroSettings false
+#define ts_show_analog_o2 false
+#define ts_show_oil_pressure_sensor false
+#define ts_show_oil_temp_sensor false
+#define ts_show_aux_sensors false
+#define ts_show_compressor_sensor false
+#define ts_show_injTest false
+
+#define ts_show_fan2_settings false
+#define ts_show_fuel_pump false
+#define ts_show_clutch_up false
+#define ts_show_clutch_down false
+#define ts_show_air_conditioning false
+#define ts_show_main_relay false
+#define ts_show_etb false
+#define ts_show_spi false
+#define ts_show_gdi false
+#define ts_show_live_data false
+#define ts_show_odd_fire false
+#define show_vvl_control false
+#define ts_show_full_pinout false
+#define ts_show_injection false
+#define ts_show_ignition false
+
+#define ts_show_cylinder_3 false
+#define ts_show_cylinder_4 false
+#define ts_show_cylinder_5 false
+#define ts_show_cylinder_6 false
+#define ts_show_cylinder_7 false
+#define ts_show_cylinder_8 false
+#define ts_show_cylinder_9 false
+#define ts_show_cylinder_10 false
+#define ts_show_cylinder_11 false
+#define ts_show_cylinder_12 false
+#define ts_show_fuel_trim_cylinder_3 false
+#define ts_show_fuel_trim_cylinder_4 false
+#define ts_show_fuel_trim_cylinder_5 false
+#define ts_show_fuel_trim_cylinder_6 false
+#define ts_show_fuel_trim_cylinder_7 false
+#define ts_show_fuel_trim_cylinder_8 false
+#define ts_show_fuel_trim_cylinder_9 false
+#define ts_show_fuel_trim_cylinder_10 false
+#define ts_show_fuel_trim_cylinder_11 false
+#define ts_show_fuel_trim_cylinder_12 false
