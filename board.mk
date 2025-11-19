@@ -12,16 +12,8 @@ include $(BOARD_DIR)/meta-info.env
 # this would save some flash while being unable to update WBO controller firmware
 DDEFS += -DEFI_WIDEBAND_FIRMWARE_UPDATE=FALSE
 
-# assign critical LED to a non-existent pin if you do not have it on your board
-# good old PD14 is still the default value
-# DDEFS += -DLED_CRITICAL_ERROR_BRAIN_PIN=Gpio::I15
-
-# EGT chip
-#un-comment to enable
-#DDEFS += -DEFI_MAX_31855=TRUE
-
-#see main repo for details on this any many other optional subsystems. We have too many, one has to choose what fits into his choice of stm32
-#DDEFS += -DEFI_ONBOARD_MEMS=TRUE
+DDEFS += -DUSB_DESCRIPTOR_B_LENGTH=38
+DDEFS += -DUSB_DESCRIPTOR_STRING_CONTENT="'r', 0, 'u', 0, 's', 0, 'E', 0, 'F', 0, 'I', 0, ' ', 0, 'u', 0, 'a', 0, 'C', 0, 'a', 0, 'n', 0, 'B', 0, 'r', 0, 'i', 0, 'd', 0, 'g', 0, 'e', 0"
 
 DDEFS += -DBOARD_SERIAL="\"000000000000060000000000\""
 
