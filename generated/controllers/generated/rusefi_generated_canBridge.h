@@ -1541,7 +1541,7 @@
 #define show_tcu_gauges false
 #define show_vvl_control false
 #define show_vvt_output_pin true
-#define SIGNATURE_HASH 3878393016
+#define SIGNATURE_HASH 2598780427
 #define SIMULATOR_TUNE_BIN_FILE_NAME "generated/simulator_tune_image.bin"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_PREFIX "generated/simulator_tune_image"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_SUFFIX ".bin"
@@ -2061,7 +2061,7 @@
 #define ts_show_reset_calibrations true
 #define ts_show_rotary false
 #define ts_show_sd_card true
-#define ts_show_sd_pins true
+#define ts_show_sd_pins false
 #define ts_show_second_bank true
 #define ts_show_sent true
 #define ts_show_software_knock false
@@ -2127,7 +2127,7 @@
 #define ts_show_wastegate_sensor true
 #define ts_show_wbo_canbus_index true
 #define ts_show_wbo_canbus_set_index true
-#define TS_SIGNATURE "rusEFI main.2025.11.19.canBridge.3878393016"
+#define TS_SIGNATURE "rusEFI main.2025.11.19.canBridge.2598780427"
 #define TS_SIMULATE_CAN '>'
 #define TS_SIMULATE_CAN_char >
 #define TS_TEST_COMMAND 't'
