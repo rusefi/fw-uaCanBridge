@@ -11,12 +11,14 @@ bus2offset = 0x20000
 bus2range  =   0x800
 
 function onAnythingFromMainBus(bus, id, dlc, data)
+    -- print("onAnythingFromMainBus")
     if id >= bus2offset and id < bus2offset + bus2range then
         txCan(BUS2, id - bus2offset, 0, data) -- relay from main into bus2
     end
 end
 
 function onAnythingFromBus2(bus, id, dlc, data)
+    -- print("onAnythingFromBus2")
     txCan(MAIN_BUS, id + bus2offset, 1, data) -- relay from bus2 into main bus, applying offset
 end
 
