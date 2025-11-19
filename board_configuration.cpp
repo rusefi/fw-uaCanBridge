@@ -15,6 +15,15 @@ Gpio getWarningLedPin() {
 	return Gpio::Unassigned;
 }
 
+static void customBoardInitHardware() {
+	palSetPadMode(GPIOC,  8, PAL_MODE_ALTERNATE(12) | PAL_STM32_OSPEED_HIGHEST);
+	palSetPadMode(GPIOC,  9, PAL_MODE_ALTERNATE(12) | PAL_STM32_OSPEED_HIGHEST);
+	palSetPadMode(GPIOC, 10, PAL_MODE_ALTERNATE(12) | PAL_STM32_OSPEED_HIGHEST);
+	palSetPadMode(GPIOC, 11, PAL_MODE_ALTERNATE(12) | PAL_STM32_OSPEED_HIGHEST);
+	palSetPadMode(GPIOC, 12, PAL_MODE_ALTERNATE(12) | PAL_STM32_OSPEED_HIGHEST);
+	palSetPadMode(GPIOD,  2, PAL_MODE_ALTERNATE(12) | PAL_STM32_OSPEED_HIGHEST);
+}
+
 static void customBoardConfigOverrides() {
     engineConfiguration->enableExtendedCanBroadcast = false;
     engineConfiguration->enableVerboseCanTx = false;
@@ -27,6 +36,8 @@ static void customBoardConfigOverrides() {
 
 	engineConfiguration->can3TxPin = Gpio::MM100_CAN3_TX;
 	engineConfiguration->can3RxPin = Gpio::MM100_CAN3_RX;
+
+	engineConfiguration->isSdCardEnabled = true;
 }
 
 // board-specific configuration setup
@@ -63,6 +74,7 @@ static void customBoardDefaultConfiguration() {
 }
 
 void setup_custom_board_overrides() {
-    custom_board_DefaultConfiguration = customBoardDefaultConfiguration;
+	custom_board_InitHardware = customBoardInitHardware;
+	custom_board_DefaultConfiguration = customBoardDefaultConfiguration;
 	custom_board_ConfigOverrides = customBoardConfigOverrides;
 }
