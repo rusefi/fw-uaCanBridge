@@ -74,7 +74,7 @@
 #define ts_show_fuel_trim_cylinder_11 false
 #define ts_show_fuel_trim_cylinder_12 false
 
-#define ts_show_can_weird false
+! #define ts_show_can_weird false
 
 ! we can totally have script consume sensor value and use broadcast
 ! #define ts_show_can_verbose false
