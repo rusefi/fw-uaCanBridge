@@ -25,9 +25,6 @@ static void customBoardInitHardware() {
 }
 
 static void customBoardConfigOverrides() {
-    engineConfiguration->enableExtendedCanBroadcast = false;
-    engineConfiguration->enableVerboseCanTx = false;
-
 	engineConfiguration->canTxPin = Gpio::MM100_CAN_TX;
 	engineConfiguration->canRxPin = Gpio::MM100_CAN_RX;
 
@@ -42,6 +39,8 @@ static void customBoardConfigOverrides() {
 
 // board-specific configuration setup
 static void customBoardDefaultConfiguration() {
+    engineConfiguration->enableExtendedCanBroadcast = false;
+    engineConfiguration->enableVerboseCanTx = false;
     // engineConfiguration->injectionPins[0] = Gpio::F13;
     // engineConfiguration->ignitionPins[0] = Gpio::E15;
 
