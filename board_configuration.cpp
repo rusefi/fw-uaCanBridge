@@ -3,12 +3,12 @@
 #include "hellen_meta.h"
 
 Gpio getCommsLedPin() {
-	return Gpio::Unassigned;
+	// Blue
+	return Gpio::C14;
 }
 
 Gpio getRunningLedPin() {
-	// Blue
-	return Gpio::C14;
+	return Gpio::Unassigned;
 }
 
 Gpio getWarningLedPin() {
