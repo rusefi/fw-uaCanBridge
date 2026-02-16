@@ -3,4 +3,4 @@
 //
 
 #define SIGNATURE_HASH 1015656342
-#define TS_SIGNATURE "rusEFI main.2026.02.15.canBridge.1015656342"
+#define TS_SIGNATURE "rusEFI main.2026.02.16.canBridge.1015656342"
