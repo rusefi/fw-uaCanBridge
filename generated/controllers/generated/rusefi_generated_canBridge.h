@@ -1463,6 +1463,7 @@
 #define PACK_PERCENT_BYTE_MULT 100.0
 #define PAGE_SIZE_1 256
 #define PAGE_SIZE_2 2048
+#define PAGE_SIZE_4 1208
 #define PEDAL_TO_TPS_RPM_SIZE 8
 #define PEDAL_TO_TPS_SIZE 8
 #define pedalSensor_NAME "Accelerator pedal"
@@ -1559,7 +1560,7 @@
 #define show_tcu_gauges false
 #define show_vvl_control false
 #define show_vvt_output_pin true
-#define SIGNATURE_HASH 1971494107
+#define SIGNATURE_HASH 1257726947
 #define SIMULATOR_TUNE_BIN_FILE_NAME "generated/simulator_tune_image.bin"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_PREFIX "generated/simulator_tune_image"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_SUFFIX ".bin"
@@ -2168,7 +2169,7 @@
 #define ts_show_wbo_canbus_index true
 #define ts_show_wbo_canbus_set_index true
 #define ts_show_wbo_canbus_set_type false
-#define TS_SIGNATURE "rusEFI main.2026.04.14.canBridge.1971494107"
+#define TS_SIGNATURE "rusEFI main.2026.04.15.canBridge.1257726947"
 #define TS_SIMULATE_CAN '>'
 #define TS_SIMULATE_CAN_char >
 #define TS_TEST_COMMAND 't'
